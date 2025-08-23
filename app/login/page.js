@@ -309,7 +309,7 @@ export default function LoginPage() {
         )}
       </div>
       <div className="version-info">v0.0.1</div>
-      <div className="copyright-info">© 2025 Portal AI. All rights reserved.</div>
+      <div className="copyright-info">©2025 Muhammad Fazli M.</div>
     </>
   );
 }
