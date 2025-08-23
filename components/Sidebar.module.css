@@ -1,0 +1,188 @@
+.sidebarContainer {
+  width: 260px;
+  height: 100vh;
+  background-color: var(--background-sidebar);
+  border-right: 1px solid var(--border-color);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  color: var(--text-primary);
+  position: relative;
+  transition: background-color 0.2s, border-color 0.2s;
+}
+
+.sidebarHeader {
+  padding-bottom: 1rem;
+}
+
+.sidebarTitle {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.newChatButton {
+  width: 100%;
+  text-align: left;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border-radius: 0.5rem;
+  background-color: transparent;
+  border: 1px solid var(--border-color);
+  cursor: pointer;
+  color: var(--text-primary);
+  transition: background-color 0.2s;
+}
+
+.newChatButton:hover {
+  background-color: var(--hover-color);
+}
+
+.chatsList {
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+.chatsTitle {
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  padding: 0 0.5rem;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+}
+
+.chatItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.2s;
+}
+
+.chatItem:hover {
+  background-color: var(--hover-color);
+}
+
+.chatItem.active {
+  background-color: var(--active-color); 
+  font-weight: 600;
+}
+
+.chatTitle {
+  flex-grow: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-right: 8px;
+}
+
+.chatActions {
+  display: none; 
+  flex-shrink: 0;
+  gap: 4px;
+}
+
+.chatItem:hover .chatActions {
+  display: flex; 
+}
+
+.chatActions button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  color: var(--text-secondary);
+  opacity: 0.6;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chatActions button:hover {
+  background-color: var(--hover-color);
+  opacity: 1;
+}
+
+.renameForm {
+  width: 100%;
+}
+
+.renameForm input {
+  width: 100%;
+  padding: 4px 6px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  background-color: var(--background-secondary); 
+  color: var(--text-primary);
+  font-size: 14px;
+  outline: none; 
+}
+
+.userProfileSection {
+  margin-top: auto;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.userProfileButton {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.875rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  width: 100%;
+  background: none;
+  border: none;
+  text-align: left;
+  color: var(--text-primary);
+}
+
+.userProfileButton:hover {
+  background-color: var(--hover-color);
+}
+
+.userProfileButton p {
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.userEmail {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+}
+
+.loginButton {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  background-color: var(--background-sidebar);
+  color: var(--text-primary);
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  text-align: left;
+  transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.loginButton:hover {
+  background-color: var(--hover-color);
+}
+
+.loginButton svg {
+  stroke: var(--text-secondary);
+  flex-shrink: 0;
+}
