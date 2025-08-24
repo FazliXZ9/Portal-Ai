@@ -1,0 +1,17 @@
+# Dependency
+node_modules
+
+# Hasil Build
+.next
+npm-debug.log
+out
+
+# Environment Lokal
+.env.local
+
+# Git
+.git
+
+# Docker
+Dockerfile
+.dockerignore
